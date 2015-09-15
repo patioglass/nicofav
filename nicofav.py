@@ -78,7 +78,7 @@ for i, name in enumerate(id_tag):
 				if os.path.isdir("./"+rank_name[int(target_rank_num)]+"/"+target_tag+"/"+writer) is False:
 					os.mkdir(rank_name[int(target_rank_num)]+"/"+target_tag+"/"+writer)
 
-				img_file = open("./"+rank_name[int(target_rank_num)]+"/"+target_tag+"/"+writer+"/"+title,"wb")
+				img_file = open("./"+rank_name[int(target_rank_num)]+"/"+target_tag+"/"+writer+"/"+number_split[1]+"_"+title+".png","wb")
 				img = opener.open(img_url+str(number_split[1]+"l")).read()
 				img_file.write(img)
 				img_file.close()
