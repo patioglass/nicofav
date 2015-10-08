@@ -37,6 +37,8 @@ if os.path.isdir("./"+rank_name[int(target_rank_num)]) is False:
 	os.mkdir(rank_name[int(target_rank_num)])
 html = opener.open(target_rank).read()
 
+
+
 print "選択したランキング："+rank_name[int(target_rank_num)]
 print "検索したいタグを入力"
 
@@ -50,7 +52,7 @@ id_tag = name_pat.findall(html)
 print "------検索中------"
 
 
-for i, name in enumerate(id_tag):
+for ç
 	#1~100
 	if i > 100:
 		break
