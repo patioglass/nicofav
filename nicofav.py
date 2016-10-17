@@ -51,8 +51,7 @@ id_tag = name_pat.findall(html)
 
 print "------検索中------"
 
-
-for ç
+for i, name in enumerate(id_tag):
 	#1~100
 	if i > 100:
 		break
